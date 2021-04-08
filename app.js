@@ -4,6 +4,7 @@ import createError from "http-errors";
 import express from "express";
 import cookieParser from "cookie-parser";
 import morgan from "morgan";
+import cors from "cors";
 import server from "./routes/index.server.routes";
 import { logger, stream } from "./config/winston";
 
@@ -13,6 +14,7 @@ app.use(morgan("dev", { stream }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(cors());
 
 server(app);
 
