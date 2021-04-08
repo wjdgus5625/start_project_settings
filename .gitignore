@@ -7,7 +7,6 @@
 node_modules/
 dist/
 build/
-search/
 logs/
 
 # Compiled Java class files
