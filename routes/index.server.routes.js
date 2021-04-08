@@ -1,7 +1,7 @@
-import test from './controller/test'
+import test from "./controller/test";
 
 const router = (app) => {
-    app.use('/test', test);
-}
+  app.use("/test", test);
+};
 
-export default router
+export default router;
