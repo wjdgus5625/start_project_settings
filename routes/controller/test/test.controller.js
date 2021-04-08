@@ -10,10 +10,8 @@ const test = (req, res, next) => {
 
         return res.json({ text: 'test' })
     } catch (error) {
-        console.log(err)
         res.status(400).json(err)
     }
-    
 }
 
 export {
