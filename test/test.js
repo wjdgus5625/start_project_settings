@@ -6,9 +6,10 @@ describe("Test the root path", () => {
     request(server)
       .get("/search")
       .then((res) => {
+        console.log(res)
         expect(res.statusCode).toBe(200);
         done();
-      });
+      })
   });
 });
 
