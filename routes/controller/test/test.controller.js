@@ -1,5 +1,3 @@
-import { validationResult } from "express-validator";
-
 const test = (req, res, next) => {
     try {
         const errors = validationResult(req);
@@ -14,6 +12,4 @@ const test = (req, res, next) => {
     }
 }
 
-export {
-    test
-}
+export { test };
